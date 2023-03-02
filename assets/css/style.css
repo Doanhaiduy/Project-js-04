@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #222; */
     background-color: #6a5af9;
 }
 
@@ -17,12 +16,12 @@ input {
     width: 248px;
     padding: 10px;
     border: none;
-
     font-size: 1.8rem;
 }
 
 .active input {
-    width: 52px;
+    width: 0px;
+    padding: 0;
 }
 
 .active input::placeholder {
@@ -30,17 +29,13 @@ input {
 }
 
 i {
+    background-color: #fff;
     transition: 0.2s linear;
     font-size: 2.4rem;
     position: absolute;
     font-weight: 800;
-    right: 42%;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     padding: 14px;
-}
-
-.active i {
-    right: 48.3%;
 }

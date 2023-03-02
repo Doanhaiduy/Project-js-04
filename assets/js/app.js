@@ -5,4 +5,7 @@ btn_search.addEventListener("click", () => {
         btn_search.parentElement.querySelector("input").focus();
     }
     btn_search.parentElement.classList.toggle("active");
+    if (btn_search.parentElement.classList.contains("active")) {
+        btn_search.parentElement.querySelector("input").value = "";
+    }
 });
