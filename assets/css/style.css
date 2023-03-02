@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #222; */
+    background-color: #6a5af9;
+}
+
+input {
+    transition: 0.2s linear;
+    outline: none;
+    height: 52px;
+    width: 248px;
+    padding: 10px;
+    border: none;
+
+    font-size: 1.8rem;
+}
+
+.active input {
+    width: 52px;
+}
+
+.active input::placeholder {
+    opacity: 0;
+}
+
+i {
+    transition: 0.2s linear;
+    font-size: 2.4rem;
+    position: absolute;
+    font-weight: 800;
+    right: 42%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 14px;
+}
+
+.active i {
+    right: 48.3%;
+}
